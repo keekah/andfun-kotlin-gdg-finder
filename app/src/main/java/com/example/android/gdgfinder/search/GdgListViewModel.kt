@@ -37,7 +37,7 @@ class GdgListViewModel: ViewModel() {
         onQueryChanged()
 
         viewModelScope.launch {
-            delay(5_000)
+            delay(10_000)
             _showNeedLocation.value = !repository.isFullyInitialized
         }
     }
